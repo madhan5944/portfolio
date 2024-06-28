@@ -1,0 +1,59 @@
+.custom-btn {
+    @apply bg-emerald-100 bg-gradient-to-tr from-emerald-100 to-emerald-300 leading-[42px] p-0 border-none;
+  }
+  
+  .btn-8 span {
+    @apply relative block w-full h-full;
+  }
+  
+  .btn-8::before,
+  .btn-8::after {
+    content: "";
+    @apply absolute right-0 bottom-0 bg-emerald-300 transition-all duration-300 ease-in-out;
+  }
+  
+  .btn-8::before {
+    @apply h-0 w-[2px];
+  }
+  
+  .btn-8::after {
+    @apply w-0 h-[2px];
+  }
+  
+  .btn-8:hover::before {
+    @apply h-full;
+  }
+  
+  .btn-8:hover::after {
+    @apply w-full;
+  }
+  
+  .btn-8:hover {
+    background: transparent;
+  }
+  
+  .btn-8 span:hover {
+    @apply text-emerald-300;
+  }
+  
+  .btn-8 span::before,
+  .btn-8 span::after {
+    content: "";
+    @apply absolute left-0 top-0 bg-emerald-300 transition-all duration-300 ease-in-out;
+  }
+  
+  .btn-8 span::before {
+    @apply w-[2px] h-0;
+  }
+  
+  .btn-8 span::after {
+    @apply h-[2px] w-0;
+  }
+  
+  .btn-8 span:hover::before {
+    @apply h-full;
+  }
+  
+  .btn-8 span:hover::after {
+    @apply w-full;
+  }
